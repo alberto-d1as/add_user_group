@@ -1,7 +1,10 @@
+# Autor: Alberto Dias
+# Pegar informaçoes de user e group
 nome_do_usuario = str(input("Digite o nome do usuário a ser inserido no grupo: "))
 nome_do_grupo = input("Digite o nome do grupo? ")
 comando_adicionar_ao_grupo = "oc adm policy add-user "
 
+# Concatenação das informações com o comando para ser executado no Cluster
 if nome_do_usuario and nome_do_grupo:      
     comando_adicionar_ao_grupo += nome_do_grupo
     comando_adicionar_ao_grupo += " "
